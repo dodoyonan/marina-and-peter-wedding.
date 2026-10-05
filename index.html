@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#eee7dd">
+<title>Peter & Marina | 17 October 2026</title>
+<meta name="description" content="You are invited to celebrate the wedding of Peter Emad & Marina Sameh on October 17, 2026 in Cairo.">
+<meta property="og:title" content="Peter & Marina — Wedding Invitation">
+<meta property="og:description" content="October 17, 2026 · Cairo">
+<meta property="og:image" content="marina-peter-1.jpeg">
+<style>
+:root {
+  --ivory:#f5f0e8;
+  --paper:#fbf8f2;
+  --ink:#20231f;
+  --olive:#4c5a4f;
+  --gold:#b18c59;
+  --mist:rgba(255,255,255,.72);
+  --line:rgba(32,35,31,.15);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+body.locked{overflow:hidden}
+button,input,select,textarea{font:inherit}
+a{color:inherit}
+.screen{min-height:100svh}
+.opening{
+  position:fixed;inset:0;z-index:1000;display:grid;place-items:center;
+  background:linear-gradient(rgba(12,13,11,.35),rgba(12,13,11,.6)),url('marina-peter-1.jpeg') center/cover no-repeat;
+  color:white;transition:opacity .9s ease,visibility .9s ease;
+}
+.opening.hide{opacity:0;visibility:hidden}
+.open-card{text-align:center;padding:30px;animation:rise 1.3s ease both}
+.open-monogram{font-size:70px;line-height:1;font-style:italic;color:#f0dfc3;margin-bottom:22px}
+.open-small{font:11px/1.4 Arial,sans-serif;letter-spacing:.3em;text-transform:uppercase;margin-bottom:16px}
+.open-names{font-size:clamp(44px,10vw,86px);font-weight:400;line-height:.95;margin:0 0 25px}
+.open-btn{
+  border:1px solid rgba(255,255,255,.75);background:rgba(255,255,255,.08);color:white;
+  padding:14px 24px;border-radius:999px;text-transform:uppercase;letter-spacing:.18em;
+  font:11px Arial,sans-serif;cursor:pointer;backdrop-filter:blur(7px)
+}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
+.hero{height:100svh;min-height:650px;position:relative;overflow:hidden;background:#111}
+.hero-bg{position:absolute;inset:-4%;background:url('marina-peter-1.jpeg') center 44%/cover no-repeat;transform:scale(1.05);animation:kenburns 14s ease-in-out infinite alternate}
+@keyframes kenburns{to{transform:scale(1.12) translateY(-1%)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.05) 12%,rgba(0,0,0,.15) 52%,rgba(0,0,0,.77) 100%)}
+.hero-copy{position:absolute;z-index:2;left:0;right:0;bottom:7vh;text-align:center;color:#fff;padding:0 22px}
+.kicker{font:11px Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;margin-bottom:16px}
+.hero h1{font-size:clamp(56px,10vw,106px);font-weight:400;line-height:.88;margin:0}
+.hero h1 em{font-weight:400;color:#ebd7b4}
+.hero-date{font-size:14px;letter-spacing:.18em;text-transform:uppercase;margin-top:20px}
+.scroll-mark{margin-top:28px;font:10px Arial,sans-serif;letter-spacing:.25em;text-transform:uppercase;opacity:.75}
+
+.invite{padding:100px 20px;text-align:center;background:var(--paper);position:relative}
+.invite:before,.invite:after{content:"✦";position:absolute;color:var(--gold);opacity:.55;font-size:14px}
+.invite:before{top:32px;left:50%;transform:translateX(-50%)}
+.invite:after{bottom:32px;left:50%;transform:translateX(-50%)}
+.invite .overline{font:11px Arial,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--olive)}
+.invite h2{font-size:clamp(36px,6vw,65px);font-weight:400;line-height:1.1;max-width:820px;margin:22px auto}
+.invite p{font:14px/1.8 Arial,sans-serif;color:#666;max-width:620px;margin:auto}
+
+.date-section{padding:105px 20px;background:var(--ivory);text-align:center}
+.date-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;max-width:760px;margin:0 auto;gap:24px}
+.date-side{font:12px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--olive)}
+.date-day{border-left:1px solid var(--line);border-right:1px solid var(--line);padding:0 45px}
+.date-number{font-size:86px;line-height:.8;color:var(--gold)}
+.date-month{font:11px Arial,sans-serif;letter-spacing:.27em;text-transform:uppercase;margin-top:12px}
+.date-title{font-size:31px;font-style:italic;margin:36px 0 0}
+
+.cinematic{height:82svh;min-height:600px;position:relative;overflow:hidden;background:#222}
+.cinematic img{width:100%;height:110%;object-fit:cover;object-position:center 42%;transform:translateY(-4%);will-change:transform}
+.cinematic:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.45),transparent 52%)}
+.photo-caption{position:absolute;z-index:2;left:0;right:0;bottom:6vh;text-align:center;color:white;font-size:35px;font-style:italic;padding:0 20px}
+
+.timeline{background:var(--paper);padding:100px 20px}
+.timeline-wrap{max-width:760px;margin:auto}
+.event{display:grid;grid-template-columns:110px 1px 1fr;gap:30px;padding:34px 0}
+.event+.event{border-top:1px solid var(--line)}
+.event-time{font-size:27px;color:var(--gold);text-align:right}
+.event-line{background:var(--line)}
+.event-type{font:10px Arial,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:var(--olive);margin-bottom:10px}
+.event h3{font-size:32px;font-weight:400;margin:0 0 8px}
+.event p{font:14px/1.65 Arial,sans-serif;color:#686b68;margin:0;max-width:470px}
+.link-btn{display:inline-block;margin-top:18px;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:4px;font:11px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+
+.count{padding:90px 20px;text-align:center;background:var(--olive);color:white}
+.count .overline{font:10px Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;opacity:.7}
+.count h2{font-size:42px;font-weight:400;margin:12px 0 30px}
+.count-grid{display:flex;justify-content:center;gap:30px;flex-wrap:wrap}
+.count-cell{min-width:86px}
+.count-num{font-size:38px}
+.count-lbl{font:9px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;opacity:.68;margin-top:5px}
+
+.rsvp{padding:105px 20px;background:var(--paper)}
+.rsvp-inner{max-width:720px;margin:auto;text-align:center}
+.rsvp-monogram{font-size:58px;color:var(--gold);font-style:italic}
+.rsvp h2{font-size:52px;font-weight:400;margin:8px 0 12px}
+.rsvp-intro{font:14px/1.7 Arial,sans-serif;color:#70736f;margin:0 auto 38px;max-width:530px}
+form{text-align:left;display:grid;gap:18px}
+.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{display:block;font:10px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--olive);margin:0 0 8px}
+input,select,textarea{width:100%;border:0;border-bottom:1px solid #aaa;background:transparent;padding:12px 2px;color:var(--ink);border-radius:0;outline:none}
+input:focus,select:focus,textarea:focus{border-bottom-color:var(--gold)}
+textarea{min-height:92px;resize:vertical}
+.radio-row{display:flex;gap:18px;flex-wrap:wrap;padding-top:6px}
+.radio-pill{border:1px solid var(--line);border-radius:999px;padding:10px 15px;font:12px Arial,sans-serif;cursor:pointer;text-transform:none;letter-spacing:0;color:var(--ink);margin:0}
+.radio-pill input{width:auto;margin-right:7px}
+.submit{
+  margin:12px auto 0;border:0;background:var(--ink);color:white;padding:15px 28px;border-radius:999px;
+  font:11px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;min-width:180px
+}
+.form-status{min-height:22px;text-align:center;font:13px Arial,sans-serif;color:var(--olive);margin-top:10px}
+
+.end-photo{height:72svh;min-height:560px;position:relative;background:url('marina-peter-1.jpeg') center 42%/cover no-repeat fixed}
+.end-photo:after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.4)}
+.end-copy{position:absolute;z-index:2;inset:0;display:grid;place-items:center;text-align:center;color:white;padding:20px}
+.end-copy h2{font-size:clamp(46px,8vw,90px);font-weight:400;margin:0}
+.end-copy p{font:11px Arial,sans-serif;letter-spacing:.23em;text-transform:uppercase;margin-top:18px}
+footer{padding:28px 20px;text-align:center;background:#181b18;color:#ccc;font:10px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}
+.reveal.show{opacity:1;transform:none}
+.petals{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.petal{position:absolute;top:-8vh;width:7px;height:10px;border-radius:70% 20% 70% 20%;background:rgba(215,194,159,.35);animation:fall linear infinite}
+@keyframes fall{to{transform:translate3d(20vw,115vh,0) rotate(520deg)}}
+
+@media(max-width:700px){
+  .date-row{grid-template-columns:1fr auto 1fr;gap:10px}
+  .date-day{padding:0 18px}
+  .date-number{font-size:64px}
+  .event{grid-template-columns:75px 1px 1fr;gap:18px}
+  .event-time{font-size:21px}
+  .event h3{font-size:27px}
+  .field-grid{grid-template-columns:1fr}
+  .count-grid{gap:18px}
+  .count-cell{min-width:65px}
+  .end-photo{background-attachment:scroll}
+}
+
+.music-toggle{
+  position:fixed;right:18px;bottom:18px;z-index:900;
+  width:46px;height:46px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.35);
+  background:rgba(24,27,24,.78);color:#fff;
+  display:grid;place-items:center;cursor:pointer;
+  backdrop-filter:blur(8px);
+  box-shadow:0 8px 24px rgba(0,0,0,.18);
+  font:18px/1 Arial,sans-serif;
+}
+.music-toggle[aria-pressed="false"]{opacity:.82}
+
+
+.hero-names{
+  display:flex;
+  justify-content:center;
+  align-items:baseline;
+  gap:.16em;
+  white-space:nowrap;
+}
+.hero-name,.hero-amp{display:inline-block}
+
+@media(max-width:700px){
+  .hero-names{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:0;
+    white-space:normal;
+    line-height:.78;
+  }
+  .hero-names .hero-name{
+    display:block;
+  }
+  .hero-names .hero-amp{
+    display:block;
+    margin:.10em 0 .12em;
+    font-size:.62em;
+    line-height:1;
+  }
+}
+
+</style>
+</head>
+<body class="locked">
+<audio id="bgMusic" loop preload="auto">
+  <source src="wedding-song.mp3" type="audio/mpeg">
+</audio>
+<button class="music-toggle" id="musicToggle" aria-label="Mute music" aria-pressed="true">♫</button>
+
+<div class="opening" id="opening" aria-label="Open wedding invitation">
+  <div class="open-card">
+    <div class="open-monogram">P & M</div>
+    <div class="open-small">The wedding of</div>
+    <h1 class="open-names">Peter & Marina</h1>
+    <button class="open-btn" id="openInvite">Open Invitation</button>
+  </div>
+</div>
+
+<div class="petals" aria-hidden="true">
+  <span class="petal" style="left:8%;animation-duration:13s;animation-delay:-7s"></span>
+  <span class="petal" style="left:28%;animation-duration:17s;animation-delay:-2s"></span>
+  <span class="petal" style="left:52%;animation-duration:14s;animation-delay:-9s"></span>
+  <span class="petal" style="left:76%;animation-duration:18s;animation-delay:-4s"></span>
+  <span class="petal" style="left:91%;animation-duration:15s;animation-delay:-11s"></span>
+</div>
+
+<main>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-copy">
+    <div class="kicker">Together with their families</div>
+    <h1 class="hero-names">
+  <span class="hero-name">Peter</span>
+  <em class="hero-amp">&</em>
+  <span class="hero-name">Marina</span>
+</h1>
+    <div class="hero-date">17 · 10 · 2026 · Cairo</div>
+    <div class="scroll-mark">Scroll to celebrate with us</div>
+  </div>
+</section>
+
+<section class="invite">
+  <div class="reveal">
+    <div class="overline">With joyful hearts</div>
+    <h2>We invite you to witness the beginning of our forever.</h2>
+    <p>“I am my beloved’s and my beloved is mine.”<br><strong>Song of Solomon 6:3</strong></p>
+  </div>
+</section>
+
+<section class="date-section">
+  <div class="reveal">
+    <div class="date-row">
+      <div class="date-side">Saturday</div>
+      <div class="date-day">
+        <div class="date-number">17</div>
+        <div class="date-month">October</div>
+      </div>
+      <div class="date-side">2026</div>
+    </div>
+    <div class="date-title">Save the date</div>
+  </div>
+</section>
+
+<section class="cinematic">
+  <img id="parallaxPhoto" src="marina-peter-2.jpeg" alt="Peter and Marina together">
+  <div class="photo-caption">A day of love, faith & celebration.</div>
+</section>
+
+<section class="timeline">
+  <div class="timeline-wrap">
+    <div class="event reveal">
+      <div class="event-time">5:00<br>PM</div>
+      <div class="event-line"></div>
+      <div>
+        <div class="event-type">Church Ceremony</div>
+        <h3>St. Mercurius (Abu Sefein) & Anba Makar Church</h3>
+        <p>First Settlement, New Cairo, Cairo Governorate</p>
+        <a class="link-btn" href="https://www.google.com/maps?q=3C8X+M96+%D9%83%D9%86%D9%8A%D8%B3%D8%A9+%D8%A7%D9%84%D8%B4%D9%87%D9%8A%D8%AF+%D8%A7%D8%A8%D9%8A+%D8%B3%D9%8A%D9%81%D9%8A%D9%86+%D9%88+%D8%A7%D9%84%D8%A7%D9%86%D8%A8%D8%A7+%D9%85%D9%82%D8%A7%D8%B1+%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D8%B9+%D8%A7%D9%84%D8%A7%D9%88%D9%84,+New+Cairo+1,+Cairo+Governorate+4734303&ftid=0x14581803b49ea517:0xc37af78fe42c2f1e&entry=gps&shh=CAE" target="_blank" rel="noopener">View church location ↗</a>
+      </div>
+    </div>
+    <div class="event reveal">
+      <div class="event-time">8:00<br>PM</div>
+      <div class="event-line"></div>
+      <div>
+        <div class="event-type">Reception</div>
+        <h3>The Guard Hotel</h3>
+        <p>Sheraton Al Matar, El Nozha, Cairo Governorate</p>
+        <a class="link-btn" href="https://www.google.com/maps?q=The+Guard+Hotel,+Sheraton+Al+Matar,+El+Nozha,+Cairo+Governorate+4472111&ftid=0x14581623db6c3bbd:0x61614cb45e77e2d1&entry=gps&shh=CAE" target="_blank" rel="noopener">View reception location ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="count">
+  <div class="reveal">
+    <div class="overline">Until we say “I do”</div>
+    <h2>Counting down to forever</h2>
+    <div class="count-grid">
+      <div class="count-cell"><div class="count-num" id="days">—</div><div class="count-lbl">Days</div></div>
+      <div class="count-cell"><div class="count-num" id="hours">—</div><div class="count-lbl">Hours</div></div>
+      <div class="count-cell"><div class="count-num" id="minutes">—</div><div class="count-lbl">Minutes</div></div>
+      <div class="count-cell"><div class="count-num" id="seconds">—</div><div class="count-lbl">Seconds</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="rsvp" id="rsvp">
+  <div class="rsvp-inner reveal">
+    <div class="rsvp-monogram">P & M</div>
+    <h2>RSVP</h2>
+    <p class="rsvp-intro">We would be honored to celebrate with you. Please let us know if you’ll be joining us.</p>
+
+    <form id="rsvpForm" method="POST" action="https://formsubmit.co/Marinasamehmaher@gmail.com">
+      
+      <input type="hidden" name="_subject" value="New Wedding RSVP — Peter & Marina">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <div>
+        <label for="guest-name">Your name</label>
+        <input id="guest-name" name="guest-name" type="text" required autocomplete="name">
+      </div>
+
+      <div>
+        <label>Will you be joining us?</label>
+        <div class="radio-row">
+          <label class="radio-pill"><input type="radio" name="attendance" value="Joyfully accepts" required> Joyfully accepts</label>
+          <label class="radio-pill"><input type="radio" name="attendance" value="Regretfully declines" required> Regretfully declines</label>
+        </div>
+      </div>
+
+      <div class="field-grid">
+        <div>
+          <label for="guests">Number of guests</label>
+          <select id="guests" name="number-of-guests">
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+            <option value="4">4</option><option value="5">5</option><option value="6+">6+</option>
+          </select>
+        </div>
+        <div>
+          <label for="contact">Email or phone (optional)</label>
+          <input id="contact" name="contact" type="text">
+        </div>
+      </div>
+
+      <div>
+        <label for="message">Message for Peter & Marina (optional)</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+
+      <button class="submit" type="submit">Send RSVP</button>
+      <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<section class="end-photo">
+  <div class="end-copy reveal">
+    <div>
+      <h2>See you there.</h2>
+      <p>Peter Emad & Marina Sameh · 17 October 2026</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>Made with love for Peter & Marina</footer>
+
+<script>
+const openBtn = document.getElementById('openInvite');
+const bgMusic = document.getElementById('bgMusic');
+const musicToggle = document.getElementById('musicToggle');
+
+openBtn.addEventListener('click', async () => {
+  document.getElementById('opening').classList.add('hide');
+  document.body.classList.remove('locked');
+  bgMusic.volume = 0.38;
+  try {
+    await bgMusic.play();
+    musicToggle.textContent = '♫';
+    musicToggle.setAttribute('aria-pressed','true');
+    musicToggle.setAttribute('aria-label','Mute music');
+  } catch (e) {
+    musicToggle.textContent = '♪';
+    musicToggle.setAttribute('aria-pressed','false');
+    musicToggle.setAttribute('aria-label','Play music');
+  }
+});
+
+musicToggle.addEventListener('click', async () => {
+  if (bgMusic.paused) {
+    try {
+      await bgMusic.play();
+      musicToggle.textContent = '♫';
+      musicToggle.setAttribute('aria-pressed','true');
+      musicToggle.setAttribute('aria-label','Mute music');
+    } catch (e) {}
+  } else {
+    bgMusic.pause();
+    musicToggle.textContent = '♪';
+    musicToggle.setAttribute('aria-pressed','false');
+    musicToggle.setAttribute('aria-label','Play music');
+  }
+});
+
+const wedding = new Date("2026-10-17T17:00:00+03:00").getTime();
+function tick(){
+  const diff = wedding - Date.now();
+  if(diff <= 0){
+    document.querySelector('.count-grid').innerHTML='<div style="font-size:30px">Today is the day.</div>';
+    return;
+  }
+  const d=Math.floor(diff/86400000), h=Math.floor((diff%86400000)/3600000),
+        m=Math.floor((diff%3600000)/60000), s=Math.floor((diff%60000)/1000);
+  days.textContent=d; hours.textContent=String(h).padStart(2,'0');
+  minutes.textContent=String(m).padStart(2,'0'); seconds.textContent=String(s).padStart(2,'0');
+}
+tick(); setInterval(tick,1000);
+
+const io = new IntersectionObserver(entries => entries.forEach(e => {
+  if(e.isIntersecting) e.target.classList.add('show');
+}),{threshold:.18});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+window.addEventListener('scroll', () => {
+  const el=document.getElementById('parallaxPhoto');
+  const r=el.parentElement.getBoundingClientRect();
+  if(r.bottom>0 && r.top<innerHeight){
+    const p=(innerHeight-r.top)/(innerHeight+r.height);
+    el.style.transform=`translateY(${-8 + p*8}%) scale(1.02)`;
+  }
+},{passive:true});
+
+const form=document.getElementById('rsvpForm');
+form.addEventListener('submit', e => {
+  if (form.action.includes('REPLACE_WITH_EMAIL')) {
+    e.preventDefault();
+    document.getElementById('formStatus').textContent = 'Please complete the RSVP form and submit.';
+  }
+});
+</script>
+</body>
+</html>
